@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import config from '../utils/config';
 
 const HeadingStyled = styled.div`
@@ -23,7 +24,7 @@ const Heading = () => (
       <div className="tabs">
         <ul>
           <li>
-            <a>info@eco-vend.co.uk</a>
+            <a href="mailto:">info@eco-vend.co.uk</a>
           </li>
           <li>
             <a>08700 777 555</a>

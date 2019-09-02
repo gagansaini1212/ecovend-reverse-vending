@@ -1,18 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import styled from 'styled-components';
 
 import config from '../utils/config';
 import Heading from './Heading';
 import Header from './Header';
-
-const Container = styled.div`
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 0px 1.0875rem 1.45rem;
-  padding-top: 0;
-`;
 
 const IndexLayout = ({ children }) => (
   <div>
@@ -24,7 +16,7 @@ const IndexLayout = ({ children }) => (
     </Helmet>
     <Heading />
     <Header />
-    <Container>{children}</Container>
+    <div>{children}</div>
   </div>
 );
 
