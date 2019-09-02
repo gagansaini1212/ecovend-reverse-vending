@@ -7,17 +7,18 @@ import config from '../utils/config';
 const Navbar = styled.div`
   padding-bottom: 1rem;
   .navbar-item img {
-    max-height:none;
+    max-height: none;
   }
 
-  .navbar-item{
+  .navbar-item {
     transition: color 0.2s;
     :hover {
       background: transparent;
-      color: #E1E8E9;
+      color: #e1e8e9;
     }
-
   }
+  .navbar-dropdown {
+    margin-top: -2rem;
   }
 `;
 
@@ -90,9 +91,19 @@ export default class Header extends React.Component {
               <LinkStyled to="#" className="navbar-item">
                 Customer Engagement
               </LinkStyled>
-              <LinkStyled to="#" className="navbar-item">
-                More
-              </LinkStyled>
+              <div className="navbar-item has-dropdown is-hoverable ">
+                <LinkStyled to="#" className="navbar-item ">
+                  More
+                </LinkStyled>
+                <div className="navbar-dropdown">
+                  <LinkStyled to="#" className="navbar-item ">
+                    Advertising
+                  </LinkStyled>
+                  <LinkStyled to="#" className="navbar-item ">
+                    Contact
+                  </LinkStyled>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -7,13 +7,6 @@ import config from '../utils/config';
 import Heading from './Heading';
 import Header from './Header';
 
-const Container = styled.div`
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 0px 1.0875rem 1.45rem;
-  padding-top: 0;
-`;
-
 const IndexLayout = ({ children }) => (
   <div>
     <Helmet>
@@ -24,7 +17,7 @@ const IndexLayout = ({ children }) => (
     </Helmet>
     <Heading />
     <Header />
-    <Container>{children}</Container>
+    {children}
   </div>
 );
 
