@@ -13,5 +13,5 @@ module.exports = {
   googleAnalytics: '',
 
   backgroundColor: '#e0e0e0',
-  themeColor: '#c62828',
+  primaryColor: '#F69B62',
 };
