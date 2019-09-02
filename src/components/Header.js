@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import config from '../utils/config';
 
 const Navbar = styled.div`
+  font-family: 'Raleway', sans-serif;
   padding-bottom: 1rem;
 
   .navbar-item img {
@@ -22,7 +23,7 @@ const Navbar = styled.div`
 
 const LinkStyled = styled(Link)`
   color: ${config.primaryColor};
-  font-size: 14px;
+  font-size: 13px;
 `;
 
 export default class Header extends React.Component {

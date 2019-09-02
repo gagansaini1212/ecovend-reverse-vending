@@ -5,6 +5,10 @@ import config from '../utils/config';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
+import AboutMachine from '../components/AboutMachine';
+import Video from '../components/Video';
+import Steps from '../components/Steps';
+import Contact from '../components/Contact';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -16,6 +20,10 @@ export default class IndexPage extends React.Component {
           url={`${config.siteUrl}`}
         />
         <Hero />
+        <AboutMachine />
+        <Video />
+        <Steps />
+        <Contact />
       </Layout>
     );
   }
