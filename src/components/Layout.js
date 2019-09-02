@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import styled from 'styled-components';
 
 import config from '../utils/config';
 import Heading from './Heading';
@@ -17,7 +16,7 @@ const IndexLayout = ({ children }) => (
     </Helmet>
     <Heading />
     <Header />
-    {children}
+    <div>{children}</div>
   </div>
 );
 

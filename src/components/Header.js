@@ -1,11 +1,12 @@
-import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
 import React from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
+
 import config from '../utils/config';
 
 const Navbar = styled.div`
   padding-bottom: 1rem;
+
   .navbar-item img {
     max-height: none;
   }
@@ -16,9 +17,6 @@ const Navbar = styled.div`
       background: transparent;
       color: #e1e8e9;
     }
-  }
-  .navbar-dropdown {
-    margin-top: -2rem;
   }
 `;
 
@@ -36,12 +34,12 @@ export default class Header extends React.Component {
     };
   }
 
-  Menu() {
+  Menu = () => {
     const { View } = this.state;
     this.setState({
       View: !View,
     });
-  }
+  };
 
   render() {
     const { View } = this.state;
@@ -50,15 +48,14 @@ export default class Header extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <a className="navbar-item">
-              <img src="/images/logo.png" alt="" />
+              <img src="/images/logo.png" alt="ecovend-logo" />
             </a>
             <a
               role="button"
               className={View ? 'navbar-burger is-active' : 'navbar-burger '}
               aria-label="menu"
               aria-expanded="false"
-              onClick={() => this.Menu()}
-            >
+              onClick={() => this.Menu()}>
               <span aria-hidden="true" />
               <span aria-hidden="true" />
               <span aria-hidden="true" />
@@ -66,8 +63,7 @@ export default class Header extends React.Component {
           </div>
           <div
             id="navbarBasicExample"
-            className={View ? 'navbar-menu is-active' : 'navbar-menu '}
-          >
+            className={View ? 'navbar-menu is-active' : 'navbar-menu '}>
             <div className="navbar-end">
               <LinkStyled to="#" className="navbar-item is-active">
                 Home
@@ -78,7 +74,6 @@ export default class Header extends React.Component {
               <LinkStyled to="#" className="navbar-item">
                 Video
               </LinkStyled>
-
               <LinkStyled to="#" className="navbar-item">
                 DRS
               </LinkStyled>
