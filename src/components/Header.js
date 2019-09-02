@@ -2,21 +2,28 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
+import config from '../utils/config';
 
 const Navbar = styled.div`
   padding-bottom: 1rem;
-  .myedit {
-    padding-top: 1rem;
+  .navbar-item img {
+    max-height:none;
   }
-  .icon {
-    color: #51be78;
-    font-size: 2rem;
-    margin-right: 0.75rem;
-    transition: color 0.5s;
+
+  .navbar-item{
+    transition: color 0.2s;
     :hover {
-      color: #000000;
+      background: transparent;
+      color: #E1E8E9;
     }
+
   }
+  }
+`;
+
+const LinkStyled = styled(Link)`
+  color: ${config.primaryColor};
+  font-size: 14px;
 `;
 
 export default class Header extends React.Component {
@@ -39,15 +46,10 @@ export default class Header extends React.Component {
     const { View } = this.state;
     return (
       <Navbar className="navbar" role="navigation" aria-label="main navigation">
-        <div className="container myedit">
+        <div className="container">
           <div className="navbar-brand">
             <a className="navbar-item">
-              <img
-                src="https://colorlib.com/preview/theme/academics/images/logo.jpg"
-                width="112"
-                height="28"
-                alt=""
-              />
+              <img src="/images/logo.png" alt="" />
             </a>
             <a
               role="button"
@@ -65,43 +67,32 @@ export default class Header extends React.Component {
             id="navbarBasicExample"
             className={View ? 'navbar-menu is-active' : 'navbar-menu '}
           >
-            <div className="navbar-start">
-              <a className="navbar-item" href="#">
-                Home
-              </a>
-              <div className="navbar-item has-dropdown is-hoverable ">
-                <a className="navbar-link ">About us </a>
-                <div className="navbar-dropdown">
-                  <div>
-                    <a className="navbar-item" href="#About">
-                      Our Teacher
-                    </a>
-                    <a className="navbar-item">Our School</a>
-                  </div>
-                </div>
-              </div>
-              <div className="navbar-item has-dropdown is-hoverable ">
-                <a className="navbar-item">Addmissions</a>
-                <a className="navbar-item" href="#Course">
-                  Course
-                </a>
-                <a className="navbar-item" href="#Contacts">
-                  Contacts
-                </a>
-              </div>
-            </div>
             <div className="navbar-end">
-              <div className="navbar-item">
-                <div className="icon ">
-                  <i className="fab fa-facebook-square" />
-                </div>
-                <div className="icon">
-                  <i className="fab fa-twitter-square" />
-                </div>
-                <div className="icon">
-                  <i className="fab fa-linkedin" />
-                </div>
-              </div>
+              <LinkStyled to="#" className="navbar-item is-active">
+                Home
+              </LinkStyled>
+              <LinkStyled to="#" className="navbar-item">
+                About RVM
+              </LinkStyled>
+              <LinkStyled to="#" className="navbar-item">
+                Video
+              </LinkStyled>
+
+              <LinkStyled to="#" className="navbar-item">
+                DRS
+              </LinkStyled>
+              <LinkStyled to="#" className="navbar-item">
+                User Steps
+              </LinkStyled>
+              <LinkStyled to="#" className="navbar-item">
+                Why Choose RVMs
+              </LinkStyled>
+              <LinkStyled to="#" className="navbar-item">
+                Customer Engagement
+              </LinkStyled>
+              <LinkStyled to="#" className="navbar-item">
+                More
+              </LinkStyled>
             </div>
           </div>
         </div>

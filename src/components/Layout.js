@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
 import config from '../utils/config';
+import Heading from './Heading';
 import Header from './Header';
 
 const Container = styled.div`
@@ -21,6 +22,7 @@ const IndexLayout = ({ children }) => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta description={config.description} />
     </Helmet>
+    <Heading />
     <Header />
     <Container>{children}</Container>
   </div>
