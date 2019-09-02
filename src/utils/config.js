@@ -1,9 +1,9 @@
 module.exports = {
   DEBUG: process.env.NODE_ENV === 'development',
 
-  siteName: 'Kickoff GatsbyJs',
+  siteName: 'Ecovend Reverse Vending',
   author: 'Parminder Klair',
-  description: 'A starting point using ReactJs, bundled with awesome GatsbyJs.',
+  description: '',
   siteUrl: 'http://kickoff-gatsbyjs.netlify.com',
 
   twitter: '@NAME-HERE',
