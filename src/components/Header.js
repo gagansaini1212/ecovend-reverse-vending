@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
@@ -16,6 +15,11 @@ const Navbar = styled.div`
     :hover {
       background: transparent;
       color: #e1e8e9;
+    }
+  }
+  .navbar-end {
+    @media only screen and (max-width: 768px) {
+      text-align: center;
     }
   }
 `;
