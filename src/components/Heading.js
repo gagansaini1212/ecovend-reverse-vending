@@ -19,9 +19,9 @@ const HeadingStyled = styled.div`
 const Heading = () => (
   <HeadingStyled>
     <div className="container">
-      <div clatabs>
+      <div className="tabs">
         <ul>
-          <li>tabs
+          <li>
             <a href="mailto:">info@eco-vend.co.uk</a>
           </li>
           <li>

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import config from '../utils/config';
 
 const Container = styled.div`
   font-family: 'Raleway', sans-serif;
@@ -22,15 +21,19 @@ const Hero = () => (
     <div className="container">
       <div className="columns">
         <div className="column ">
-          <h1 className="title is-1 is-capitalized ">
-            ECONVEND REVERS VENDING
+          <h1 className="title is-1 is-capitalized">
+            ECONVEND REVERSE VENDING
           </h1>
           <h5 className="subtitle is-5">
             Welcome to the next generation of recycling
           </h5>
         </div>
         <div className="column has-text-right">
-          <img className="has-text-right" src="/images/hero.jpg" alt="" />
+          <img
+            className="has-text-right"
+            src="/images/hero.jpg"
+            alt="vending machine"
+          />
         </div>
       </div>
     </div>

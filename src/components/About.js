@@ -18,8 +18,8 @@ const Container = styled.div`
   }
 `;
 
-const AboutMachine = () => (
-  <Container className="container">
+const About = () => (
+  <Container id="about" className="container">
     <section className="section">
       <div className="has-text-centered">
         <h5 className="subtitle is-5 has-text-white">
@@ -49,4 +49,4 @@ const AboutMachine = () => (
   </Container>
 );
 
-export default AboutMachine;
+export default About;

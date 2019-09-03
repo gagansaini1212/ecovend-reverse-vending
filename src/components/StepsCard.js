@@ -4,9 +4,8 @@ import config from '../utils/config';
 
 const Container = styled.div`
   font-family: 'Raleway', sans-serif;
-
   .card {
-    padding: 4rem 0rem 6.5rem 0rem;
+    padding: 1rem 0rem 6.5rem 0rem;
   }
 
   .card-para {
