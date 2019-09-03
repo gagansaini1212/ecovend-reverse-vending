@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
@@ -6,24 +5,25 @@ import styled from 'styled-components';
 import config from '../utils/config';
 
 const Navbar = styled.div`
+  font-family: 'Raleway', sans-serif;
   padding-bottom: 1rem;
 
   .navbar-item img {
-    max-height:none;
+    max-height: none;
   }
 
-  .navbar-item{
+  .navbar-item {
     transition: color 0.2s;
     :hover {
       background: transparent;
-      color: #E1E8E9;
+      color: #e1e8e9;
     }
   }
 `;
 
 const LinkStyled = styled(Link)`
   color: ${config.primaryColor};
-  font-size: 14px;
+  font-size: 13px;
 `;
 
 export default class Header extends React.Component {
@@ -40,7 +40,7 @@ export default class Header extends React.Component {
     this.setState({
       View: !View,
     });
-  }
+  };
 
   render() {
     const { View } = this.state;
@@ -56,8 +56,7 @@ export default class Header extends React.Component {
               className={View ? 'navbar-burger is-active' : 'navbar-burger '}
               aria-label="menu"
               aria-expanded="false"
-              onClick={() => this.Menu()}
-            >
+              onClick={() => this.Menu()}>
               <span aria-hidden="true" />
               <span aria-hidden="true" />
               <span aria-hidden="true" />
@@ -65,8 +64,7 @@ export default class Header extends React.Component {
           </div>
           <div
             id="navbarBasicExample"
-            className={View ? 'navbar-menu is-active' : 'navbar-menu '}
-          >
+            className={View ? 'navbar-menu is-active' : 'navbar-menu '}>
             <div className="navbar-end">
               <LinkStyled to="#" className="navbar-item is-active">
                 Home
@@ -89,9 +87,19 @@ export default class Header extends React.Component {
               <LinkStyled to="#" className="navbar-item">
                 Customer Engagement
               </LinkStyled>
-              <LinkStyled to="#" className="navbar-item">
-                More
-              </LinkStyled>
+              <div className="navbar-item has-dropdown is-hoverable ">
+                <LinkStyled to="#" className="navbar-item ">
+                  More
+                </LinkStyled>
+                <div className="navbar-dropdown">
+                  <LinkStyled to="#" className="navbar-item ">
+                    Advertising
+                  </LinkStyled>
+                  <LinkStyled to="#" className="navbar-item ">
+                    Contact
+                  </LinkStyled>
+                </div>
+              </div>
             </div>
           </div>
         </div>
