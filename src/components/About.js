@@ -52,7 +52,7 @@ const About = () => (
               compacts and stores bottles and cans. RVMs provide a simple and
               effLinkctive solution to beverage container waste.
             </p>
-            <LinkStyled to="#" className="button has-text-white">
+            <LinkStyled href="#contact" className="button has-text-white">
               Contact
             </LinkStyled>
           </div>
