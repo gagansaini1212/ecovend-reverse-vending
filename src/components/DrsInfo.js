@@ -6,27 +6,21 @@ import config from '../utils/config';
 const Conatiner = styled.div`
   font-family: 'Raleway', sans-serif;
   padding-bottom: 10rem;
-
-  .title {
-    color: ${config.primaryColor};
-    font-weight: 500;
-  }
-
-  .video {
-    width: 80%;
-    height: 34rem;
+  h4 {
+    color: #f38044;
   }
 
   .text {
-    color: ${config.primaryColor};
+    color: #f38044;
     margin-top: 10rem;
-    margin-bottom: 5rem;
     font-weight: 500;
+    font-size: 1.1rem;
   }
 
   .para {
     color: ${config.primaryColor};
     line-height: 1.75rem;
+    padding: 3.19rem;
   }
 `;
 

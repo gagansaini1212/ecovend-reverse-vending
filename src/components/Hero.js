@@ -15,7 +15,8 @@ const Container = styled.section`
   }
   .subtitle {
     color: #f26a16;
-    font-size: 1.3rem;
+    font-size: 14px;
+    font-weight: 500;
   }
 `;
 
@@ -23,7 +24,7 @@ const Hero = () => (
   <Container className="section">
     <div className="container">
       <div className="columns">
-        <div className="column is-5 has-text-centered">
+        <div className="column has-text-centered">
           <h1 className="title is-1 is-capitalized">ECOVEND REVERSE VENDING</h1>
           <h5 className="subtitle">
             Welcome to the next generation of recycling
