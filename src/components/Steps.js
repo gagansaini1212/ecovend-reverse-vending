@@ -46,6 +46,7 @@ const Steps = () => (
             </div>
             <div className="column is-one-third">
               <Stepscard
+                padding=" 4rem 0rem 4.5rem 0rem"
                 title="STEP 2"
                 description="The bar code is scanned and logged."
               />
@@ -55,6 +56,7 @@ const Steps = () => (
             </div>
             <div className="column is-one-third">
               <Stepscard
+                padding="3rem 0rem 5rem 0rem"
                 title="STEP 1"
                 description="Load empty beverage containers into the chute."
               />
@@ -64,6 +66,7 @@ const Steps = () => (
             </div>
             <div className="column is-one-third">
               <Stepscard
+                padding="3rem 0rem 3.5rem 0rem"
                 title="STEP 3"
                 description="The machine issues a reward voucher or an electronic credit."
               />

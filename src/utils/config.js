@@ -14,4 +14,5 @@ module.exports = {
 
   backgroundColor: '#e0e0e0',
   primaryColor: '#F69B62',
+  secondaryColor: '#F48540',
 };
