@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import config from '../utils/config';
 
-const Container = styled.div`
+const Container = styled.section`
   background-color: #e1eff2;
   font-family: 'Raleway', sans-serif;
   .columns {
@@ -42,13 +42,14 @@ const Container = styled.div`
     }
   }
 
-  button {
+  .button {
     font-size: 1rem;
     color: #fff;
     font-weight: 400;
     background-color: ${config.secondaryColor};
     transition: opacity 0.2s;
     :hover {
+      background-color: ${config.secondaryColor};
       color: #fff;
       opacity: 0.6;
     }
@@ -120,35 +121,35 @@ const Contact = () => (
                   </div>
                 </div>
               </div>
-
-              <div className="field is-horizontal">
-                <div className="field-body">
-                  <div className="field">
-                    <div className="control">
-                      <input
-                        className="input "
-                        type="text"
-                        placeholder="Subject"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="field is-horizontal">
-                <div className="field-body">
-                  <div className="field">
-                    <div>
-                      <textarea
-                        className="textarea"
-                        placeholder="Type your message here"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button className="button  is-large is-fullwidth">Submit</button>
             </div>
+
+            <div className="field is-horizontal">
+              <div className="field-body">
+                <div className="field">
+                  <div className="control">
+                    <input
+                      className="input "
+                      type="text"
+                      placeholder="Subject"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="field is-horizontal">
+              <div className="field-body">
+                <div className="field">
+                  <div className="control">
+                    <textarea
+                      className="textarea"
+                      placeholder="Type your message here"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button className="button is-primary is-fullwidth">Submit</button>
           </div>
         </div>
       </div>

@@ -15,8 +15,9 @@ const Container = styled.section`
   }
   .subtitle {
     color: #f26a16;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
+    letter-spacing: 1.2px;
   }
 `;
 

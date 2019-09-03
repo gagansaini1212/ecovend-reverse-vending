@@ -12,8 +12,11 @@ const Conatiner = styled.div`
     font-weight: 500;
   }
   .video {
-    width: 80%;
+    width: 85%;
     height: 34rem;
+    @media only screen and (max-width: 768px) {
+      height: auto;
+    }
   }
 `;
 

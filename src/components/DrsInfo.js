@@ -6,21 +6,18 @@ import config from '../utils/config';
 const Conatiner = styled.div`
   font-family: 'Raleway', sans-serif;
   padding-bottom: 10rem;
-  h4 {
-    color: #f38044;
-  }
-
   .text {
-    color: #f38044;
+    color: ${config.primaryColor};
     margin-top: 10rem;
     font-weight: 500;
     font-size: 1.1rem;
   }
-
   .para {
     color: ${config.primaryColor};
     line-height: 1.75rem;
-    padding: 3.19rem;
+    padding: 0.3rem 3.65rem;
+    font-size: 14px;
+    margin-top: 5rem;
   }
 `;
 
