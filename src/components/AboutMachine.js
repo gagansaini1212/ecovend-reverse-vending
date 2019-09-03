@@ -39,7 +39,7 @@ const AboutMachine = () => (
               compacts and stores bottles and cans. RVMs provide a simple and
               effective solution to beverage container waste.
             </p>
-            <Link className="button has-text-white" to="#">
+            <Link to="#" className="button has-text-white">
               Contact
             </Link>
           </div>
