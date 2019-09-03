@@ -4,10 +4,8 @@ import config from '../utils/config';
 
 const Container = styled.div`
   font-family: 'Raleway', sans-serif;
-  padding-bottom: 4rem;
-
   .card {
-    padding: ${props => props.padding};
+    padding: 1rem 0rem 6.5rem 0rem;
   }
 
   .card-para {

@@ -1,17 +1,15 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import config from '../utils/config';
 
 const Navbar = styled.div`
   font-family: 'Raleway', sans-serif;
   padding-bottom: 1rem;
-
   .navbar-item img {
     max-height: none;
   }
-
   .navbar-item {
     transition: color 0.2s;
     :hover {
@@ -19,9 +17,14 @@ const Navbar = styled.div`
       color: #e1e8e9;
     }
   }
+  .navbar-end {
+    @media only screen and (max-width: 768px) {
+      text-align: center;
+    }
+  }
 `;
 
-const LinkStyled = styled(Link)`
+const LinkStyled = styled(AnchorLink)`
   color: ${config.primaryColor};
   font-size: 13px;
 `;
@@ -31,29 +34,28 @@ export default class Header extends React.Component {
     super(props);
 
     this.state = {
-      View: false,
+      view: false,
     };
   }
 
   Menu = () => {
-    const { View } = this.state;
+    const { view } = this.state;
     this.setState({
-      View: !View,
+      view: !view,
     });
   };
 
   render() {
-    const { View } = this.state;
+    const { view } = this.state;
     return (
       <Navbar className="navbar" role="navigation" aria-label="main navigation">
         <div className="container">
           <div className="navbar-brand">
-            <a className="navbar-item">
+            <a href="/" className="navbar-item">
               <img src="/images/logo.png" alt="ecovend-logo" />
             </a>
             <a
-              role="button"
-              className={View ? 'navbar-burger is-active' : 'navbar-burger '}
+              className={view ? 'navbar-burger is-active' : 'navbar-burger '}
               aria-label="menu"
               aria-expanded="false"
               onClick={() => this.Menu()}>
@@ -64,38 +66,38 @@ export default class Header extends React.Component {
           </div>
           <div
             id="navbarBasicExample"
-            className={View ? 'navbar-menu is-active' : 'navbar-menu '}>
+            className={view ? 'navbar-menu is-active' : 'navbar-menu '}>
             <div className="navbar-end">
-              <LinkStyled to="#" className="navbar-item is-active">
+              <LinkStyled href="#" className="navbar-item is-active">
                 Home
               </LinkStyled>
-              <LinkStyled to="#" className="navbar-item">
+              <LinkStyled href="#about" className="navbar-item">
                 About RVM
               </LinkStyled>
-              <LinkStyled to="#" className="navbar-item">
+              <LinkStyled href="#video" className="navbar-item">
                 Video
               </LinkStyled>
-              <LinkStyled to="#" className="navbar-item">
+              <LinkStyled href="#drs" className="navbar-item">
                 DRS
               </LinkStyled>
-              <LinkStyled to="#" className="navbar-item">
+              <LinkStyled href="#" className="navbar-item">
                 User Steps
               </LinkStyled>
-              <LinkStyled to="#" className="navbar-item">
+              <LinkStyled href="#" className="navbar-item">
                 Why Choose RVMs
               </LinkStyled>
-              <LinkStyled to="#" className="navbar-item">
+              <LinkStyled href="#" className="navbar-item">
                 Customer Engagement
               </LinkStyled>
               <div className="navbar-item has-dropdown is-hoverable ">
-                <LinkStyled to="#" className="navbar-item ">
+                <LinkStyled href="#" className="navbar-item ">
                   More
                 </LinkStyled>
                 <div className="navbar-dropdown">
-                  <LinkStyled to="#" className="navbar-item ">
+                  <LinkStyled href="#" className="navbar-item ">
                     Advertising
                   </LinkStyled>
-                  <LinkStyled to="#" className="navbar-item ">
+                  <LinkStyled href="#" className="navbar-item ">
                     Contact
                   </LinkStyled>
                 </div>

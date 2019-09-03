@@ -6,11 +6,12 @@ const Container = styled.div`
   margin-top: 6rem;
   font-family: 'Raleway', sans-serif;
   background-color: #aabcbf;
-
+  @media only screen and (max-width: 768px) {
+    margin-top: 0rem;
+  }
   .subtitle {
     margin-bottom: 3rem;
   }
-
   .button {
     margin-top: 7rem;
     background: transparent;
@@ -18,15 +19,15 @@ const Container = styled.div`
   }
 `;
 
-const AboutMachine = () => (
-  <Container className="container">
+const About = () => (
+  <Container id="about" className="container">
     <section className="section">
       <div className="has-text-centered">
-        <h5 className="subtitle is-5 has-text-white">
+        <h2 className="subtitle is-5 has-text-white">
           WHAT IS A REVERSE VENDING MACHINE?
-        </h5>
+        </h2>
         <div className="columns is-mobile is-centered">
-          <div className="column is-three-quarters">
+          <div className="column is-10">
             <p className="has-text-white text">
               A reverse vending machine or RVM is a recycling device with
               integrated technology that accepts used (empty) beverage
@@ -39,7 +40,7 @@ const AboutMachine = () => (
               compacts and stores bottles and cans. RVMs provide a simple and
               effective solution to beverage container waste.
             </p>
-            <Link className="button has-text-white" to="#">
+            <Link to="#" className="button has-text-white">
               Contact
             </Link>
           </div>
@@ -49,4 +50,4 @@ const AboutMachine = () => (
   </Container>
 );
 
-export default AboutMachine;
+export default About;

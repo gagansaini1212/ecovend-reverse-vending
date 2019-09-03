@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import config from '../utils/config';
 
 const Container = styled.div`
   font-family: 'Raleway', sans-serif;
-
-  .card-para {
-    font-weight: 100;
-    color: ${config.primaryColor};
+  :last-child {
+    height: 91%;
+  }
+  .card {
+    height: 100% !important;
   }
 `;
 
@@ -16,7 +16,7 @@ const Iconcard = props => (
     <div className="card">
       <div className="card-content my">
         <div className="has-text-centered">
-          <img src={props.Link} alt="" width={props.width} />
+          <img src={props.Link} alt={props.alt} />
         </div>
       </div>
     </div>
