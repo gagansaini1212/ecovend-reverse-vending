@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import config from '../utils/config';
 import Heading from './Heading';
 import Header from './Header';
+import Footer from './Footer';
 
 const IndexLayout = ({ children }) => (
   <div>
@@ -17,6 +18,7 @@ const IndexLayout = ({ children }) => (
     <Heading />
     <Header />
     <div>{children}</div>
+    <Footer />
   </div>
 );
 

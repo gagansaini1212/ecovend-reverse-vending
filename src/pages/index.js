@@ -9,6 +9,10 @@ import Video from '../components/Video';
 import DrsInfo from '../components/DrsInfo';
 import Steps from '../components/Steps';
 import Contact from '../components/Contact';
+import Choose from '../components/Choose';
+import Customer from '../components/Customer';
+import GoogleMap from '../components/GoogleMap';
+import Advertisment from '../components/Advertising';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -24,7 +28,11 @@ export default class IndexPage extends React.Component {
         <Video />
         <DrsInfo />
         <Steps />
+        <Choose />
+        <Customer />
+        <Advertisment />
         <Contact />
+        <GoogleMap />
       </Layout>
     );
   }

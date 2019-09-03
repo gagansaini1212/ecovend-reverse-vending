@@ -4,12 +4,17 @@ import config from '../utils/config';
 
 const Container = styled.div`
   background-color: #e1eff2;
+  font-family: 'Raleway', sans-serif;
   .columns {
     background-color: #ffffff;
   }
   .column {
     margin-top: 3rem;
-    padding-bottom:3rem;
+    padding-bottom: 3rem;
+  }
+
+  .text {
+    color: ${config.secondaryColor};
   }
 
   .input {
@@ -25,57 +30,56 @@ const Container = styled.div`
     }
   }
 
-    textarea {
-      border-bottom: 1px solid ${config.secondaryColor} !important;
-      background-color: #fff;
-      border-color: #fff;
-      border-radius: 0px;
-      box-shadow: none;
-      ::placeholder {
-        color: ${config.secondaryColor};
-        opacity: 1;
-      }
-
-      :hover{
-        border-color: red;
-      }
-      :focus{
-        
-          outline: none !important;
-      }
+  textarea {
+    border-bottom: 1px solid ${config.secondaryColor} !important;
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 0px;
+    box-shadow: none;
+    ::placeholder {
+      color: ${config.secondaryColor};
+      opacity: 1;
     }
-
   }
-    button{
-      font-size: 1rem;
-      color:#fff;
-      font-weight:400;
-      background-color:${config.secondaryColor};
-      transition: opacity 0.2s;
-      :hover{
-        color:#fff;
-        opacity:0.6;
-      }
-    }
 
-    .control{
-      :hover{
-        border-color: #fff;
-      }
-      :focus,:active{
-            border-color: #719ECE;
-      }
+  button {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 400;
+    background-color: ${config.secondaryColor};
+    transition: opacity 0.2s;
+    :hover {
+      color: #fff;
+      opacity: 0.6;
     }
+  }
+
+  .control {
+    :hover {
+      border-color: #fff;
+    }
+    :focus,
+    :active {
+      border-color: #719ece;
+    }
+  }
 `;
 
 const Contact = () => (
   <Container>
     <section className="section">
       <div className="container">
-        <div className="columns">
-          <div className="column">First column</div>
+        <div className="columns is-8">
+          <div className="column has-text-centered is-7 ">
+            <h1 className="subtitle is-2 text">GET IN TOUCH</h1>
+            <h4 className="subtitle is-6 text">
+              ECO House, Lea Road, Waltham Abbey, Hertfordshire, EN9 1AS
+            </h4>
+            <h4 className="subtitle is-6 text">info@eco-vend.co.uk</h4>
+            <h4 className="subtitle is-6 text">08700 777 555</h4>
+          </div>
           <div className="column">
-            <div className="">
+            <div>
               <div className="field is-horizontal">
                 <div className="field-body">
                   <div className="field">
