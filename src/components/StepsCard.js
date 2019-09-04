@@ -1,13 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { withPropsOnChange } from 'recompose';
 import theme from '../utils/theme';
 
 const Container = styled.div`
   font-family: 'Raleway', sans-serif;
-  padding: 1rem;
+  padding: ${props => props.card};
+  @media only screen and (max-width: 768px) {
+    padding: 1rem;
+    margin-top: none;
+  }
   .card {
-    padding: 1rem 0rem 6.5rem 0rem;
+    padding: ${props => props.padding};
+    @media only screen and (max-width: 768px) {
+      padding: 0rem;
+    }
   }
 
   .card-para {
@@ -16,8 +24,8 @@ const Container = styled.div`
   }
 `;
 
-const StepsCard = ({ title, description, padding }) => (
-  <Container padding={padding}>
+const StepsCard = ({ title, description, padding, card }) => (
+  <Container padding={padding} card={card}>
     <div className="card">
       <div className="card-content">
         <div className="has-text-centered">
