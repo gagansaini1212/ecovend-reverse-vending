@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import theme from '../utils/theme';
+
 const Container = styled.section`
-  font-family: 'Raleway', sans-serif;
+  font-family: ${theme.primaryFontFamily};
   .title {
     color: #f26a16;
     font-size: 72px;
@@ -15,7 +17,7 @@ const Container = styled.section`
   }
   .subtitle {
     color: #f26a16;
-    font-size: 18px;
+    font-size: ${theme.fontSizeMedium};
     font-weight: 500;
     letter-spacing: 1.2px;
   }
@@ -26,7 +28,7 @@ const Hero = () => (
     <div className="container">
       <div className="columns">
         <div className="column has-text-centered">
-          <h1 className="title is-1 is-capitalized">ECOVEND REVERSE VENDING</h1>
+          <h1 className="title is-capitalized">ECOVEND REVERSE VENDING</h1>
           <h5 className="subtitle">
             Welcome to the next generation of recycling
           </h5>

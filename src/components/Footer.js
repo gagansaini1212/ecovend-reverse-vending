@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import config from '../utils/config';
+
+import theme from '../utils/theme';
 
 const Conatiner = styled.div`
-  font-family: 'Raleway', sans-serif;
-  background-color: ${config.secondaryColor};
+  font-family: ${theme.primaryFontFamily};
+  background-color: ${theme.secondaryColor};
 
   .icon {
     margin-top: 1rem;
@@ -18,7 +19,7 @@ const Conatiner = styled.div`
 const Footer = () => (
   <Conatiner>
     <section className="section">
-      <div className="columns is-mobile is-centered">
+      <div className="columns is-centered">
         <div className="column is-two-thirds has-text-centered has-text-white	">
           <h1 className="has-text-weight-medium top ">08700 777 555</h1>
           <div>

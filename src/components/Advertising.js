@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import config from '../utils/config';
+import theme from '../utils/theme';
 
 const Conatiner = styled.section`
-  font-family: 'Raleway', sans-serif;
-  background-color: ${config.secondaryColor};
+  font-family: ${theme.primaryFontFamily};
+  background-color: ${theme.secondaryColor};
 
   .section {
     padding: 3rem 1.5rem 0rem 1.5rem;
@@ -31,7 +31,7 @@ const Conatiner = styled.section`
 `;
 
 const Advertisment = () => (
-  <Conatiner className="section">
+  <Conatiner id="advertising" className="section">
     <div className="container">
       <div className="columns  is-centered">
         <div className="column is-two-thirds has-text-centered has-text-white	">

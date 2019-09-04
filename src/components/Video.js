@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import config from '../utils/config';
+import theme from '../utils/theme';
 
 const Conatiner = styled.div`
   margin-top: 6rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: ${theme.primaryFontFamily};
   padding-bottom: 1rem;
   .title {
-    color: ${config.primaryColor};
+    color: ${theme.primaryColor};
     font-weight: 500;
   }
   .video {

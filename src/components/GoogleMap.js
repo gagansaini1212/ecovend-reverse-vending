@@ -44,7 +44,7 @@ class GoogleMap extends React.Component {
               <AnyReactComponent
                 lat={center.lat}
                 lng={center.lng}
-                text="Drop location"
+                text="Our location"
               />
             </GoogleMapReact>
           </div>

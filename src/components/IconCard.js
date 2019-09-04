@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import theme from '../utils/theme';
+
 const Container = styled.div`
-  font-family: 'Raleway', sans-serif;
+  font-family: ${theme.primaryFontFamily};
+  padding: 1rem;
+
   :last-child {
     height: 100%;
-  }
-  .card {
-    height: 100% !important;
   }
   img {
     width: 60%;

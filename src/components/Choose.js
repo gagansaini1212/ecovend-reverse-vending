@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import config from '../utils/config';
+
+import theme from '../utils/theme';
 
 const Conatiner = styled.div`
-  font-family: 'Raleway', sans-serif;
+  font-family: ${theme.primaryFontFamily};
   background-color: #e90700;
 
   .section {
@@ -12,17 +13,17 @@ const Conatiner = styled.div`
 `;
 
 const Choose = () => (
-  <Conatiner>
+  <Conatiner id="choose">
     <section className="section">
       <div className="container">
         <div className="columns is-centered ">
           <div className="column  is-four-fifths">
             <h1 className="title is-1 has-text-white has-text-centered">
-              WHY CHOOSW REVERSE VENDING?
+              WHY CHOOSE REVERSE VENDING?
             </h1>
             <div className="columns">
               <div className="column  has-text-centered">
-                <img src="/images/Icons/Earth.png" />
+                <img src="/images/Icons/Earth.png" alt="Save Earth" />
                 <h1 className="subtitle is-5 has-text-white has-text-weight-medium">
                   Help save the planet for generation to come
                 </h1>
@@ -30,6 +31,7 @@ const Choose = () => (
               <div className="column has-text-centered">
                 <img
                   src="/images/Icons/plant.png"
+                  alt="Support Us"
                   style={{ padding: '1rem 0rem 0rem 0rem' }}
                 />
                 <h1 className="subtitle is-5 has-text-white has-text-weight-medium ">
@@ -37,7 +39,7 @@ const Choose = () => (
                 </h1>
               </div>
               <div className="column has-text-centered">
-                <img src="/images/Icons/Money.png" />
+                <img src="/images/Icons/Money.png" alt="Attract Customer" />
                 <h1 className="subtitle is-5 has-text-white has-text-weight-medium ">
                   Attract and Engage with Customers
                 </h1>
@@ -45,15 +47,17 @@ const Choose = () => (
               <div className="column has-text-centered">
                 <img
                   src="/images/Icons/Business.png"
+                  alt="Business Sense"
                   style={{ padding: '1rem 0rem 0rem 0rem' }}
                 />
                 <h1 className="subtitle is-5 has-text-white has-text-weight-medium ">
-                  It's good business Sense
+                  It&apos;s good business Sense
                 </h1>
               </div>
               <div className="column has-text-centered">
                 <img
                   src="/images/Icons/Sound.png"
+                  alt="Revenue"
                   style={{ padding: '1rem 0rem 0rem 0rem' }}
                 />
                 <h1 className="subtitle is-5 has-text-white has-text-weight-medium ">

@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import config from '../utils/config';
+
+import theme from '../utils/theme';
 import ContactForm from './ContactForm';
 
 const Container = styled.section`
   background-color: #e1eff2;
-  font-family: 'Raleway', sans-serif;
+  font-family: ${theme.primaryFontFamily};
   .columns {
     background-color: #ffffff;
   }
@@ -15,30 +16,30 @@ const Container = styled.section`
   }
 
   .text {
-    color: ${config.secondaryColor};
+    color: ${theme.secondaryColor};
   }
 
   .input {
     height: 2.5rem;
-    border-bottom: 1px solid ${config.secondaryColor} !important;
+    border-bottom: 1px solid ${theme.secondaryColor} !important;
     background-color: #fff;
-    border-color: white;
-    border-radius: 0px;
+    border-color: #fff;
+    border-radius: none;
     box-shadow: none;
     ::placeholder {
-      color: ${config.secondaryColor};
+      color: ${theme.secondaryColor};
       opacity: 1;
     }
   }
 
   textarea {
-    border: 1px solid ${config.secondaryColor} !important;
+    border: 1px solid ${theme.secondaryColor} !important;
     background-color: #fff;
     border-color: #fff;
-    border-radius: 0px;
+    border-radius: none;
     box-shadow: none;
     ::placeholder {
-      color: ${config.secondaryColor};
+      color: ${theme.secondaryColor};
       opacity: 1;
     }
   }
@@ -47,10 +48,10 @@ const Container = styled.section`
     font-size: 1rem;
     color: #fff;
     font-weight: 400;
-    background-color: ${config.secondaryColor};
+    background-color: ${theme.secondaryColor};
     transition: opacity 0.2s;
     :hover {
-      background-color: ${config.secondaryColor};
+      background-color: ${theme.secondaryColor};
       color: #fff;
       opacity: 0.6;
     }
@@ -69,7 +70,7 @@ const Container = styled.section`
 `;
 
 const Contact = () => (
-  <Container className="section">
+  <Container id="contact" className="section">
     <div className="container">
       <div className="columns">
         <div className="column has-text-centered is-7">
@@ -81,11 +82,9 @@ const Contact = () => (
           <h4 className="subtitle is-6 text">08700 777 555</h4>
         </div>
         <div className="column">
-          <div>
-            <div className="field is-horizontal">
-              <div className="field-body">
-                <ContactForm />
-              </div>
+          <div className="field is-horizontal">
+            <div className="field-body">
+              <ContactForm />
             </div>
           </div>
         </div>

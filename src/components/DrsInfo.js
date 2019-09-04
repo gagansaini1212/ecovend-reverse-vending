@@ -1,22 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import config from '../utils/config';
+import theme from '../utils/theme';
 
 const Conatiner = styled.div`
-  font-family: 'Raleway', sans-serif;
+  font-family: ${theme.primaryFontFamily};
   padding-bottom: 10rem;
   .text {
-    color: ${config.primaryColor};
+    color: ${theme.primaryColor};
     margin-top: 10rem;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: ${theme.fontSizeMedium};
   }
   .para {
-    color: ${config.primaryColor};
+    color: ${theme.primaryColor};
     line-height: 1.75rem;
     padding: 0.3rem 3.65rem;
-    font-size: 14px;
+    font-size: ${theme.fontSize};
     margin-top: 5rem;
   }
 `;

@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-import config from '../utils/config';
+import theme from '../utils/theme';
 
 const Navbar = styled.div`
-  font-family: 'Raleway', sans-serif;
+  font-family: ${theme.primaryFontFamily};
   padding-bottom: 1rem;
   .navbar-item img {
     max-height: none;
@@ -22,11 +22,14 @@ const Navbar = styled.div`
       text-align: center;
     }
   }
+  .navbar-dropdown {
+    margin-top: -2rem;
+  }
 `;
 
 const LinkStyled = styled(AnchorLink)`
-  color: ${config.primaryColor};
-  font-size: 13px;
+  color: ${theme.primaryColor};
+  font-size: ${theme.fontSize};
 `;
 
 export default class Header extends React.Component {
@@ -68,7 +71,7 @@ export default class Header extends React.Component {
             id="navbarBasicExample"
             className={view ? 'navbar-menu is-active' : 'navbar-menu '}>
             <div className="navbar-end">
-              <LinkStyled href="#" className="navbar-item is-active">
+              <LinkStyled href="/" className="navbar-item is-active">
                 Home
               </LinkStyled>
               <LinkStyled href="#about" className="navbar-item">
@@ -80,24 +83,22 @@ export default class Header extends React.Component {
               <LinkStyled href="#drs" className="navbar-item">
                 DRS
               </LinkStyled>
-              <LinkStyled href="#" className="navbar-item">
+              <LinkStyled href="#steps" className="navbar-item">
                 User Steps
               </LinkStyled>
-              <LinkStyled href="#" className="navbar-item">
+              <LinkStyled href="#choose" className="navbar-item">
                 Why Choose RVMs
               </LinkStyled>
-              <LinkStyled href="#" className="navbar-item">
+              <LinkStyled href="#customer-engagement" className="navbar-item">
                 Customer Engagement
               </LinkStyled>
               <div className="navbar-item has-dropdown is-hoverable ">
-                <LinkStyled href="#" className="navbar-item ">
-                  More
-                </LinkStyled>
+                <LinkStyled className="navbar-item ">More</LinkStyled>
                 <div className="navbar-dropdown">
-                  <LinkStyled href="#" className="navbar-item ">
+                  <LinkStyled href="#advertising" className="navbar-item ">
                     Advertising
                   </LinkStyled>
-                  <LinkStyled href="#" className="navbar-item ">
+                  <LinkStyled href="#contact" className="navbar-item ">
                     Contact
                   </LinkStyled>
                 </div>

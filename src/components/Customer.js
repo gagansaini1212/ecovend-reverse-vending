@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import config from '../utils/config';
+
+import theme from '../utils/theme';
 
 const Conatiner = styled.section`
-  font-family: 'Raleway', sans-serif;
+  font-family: ${theme.primaryFontFamily};
   background-color: #e1eff2;
 
   .background {
@@ -16,26 +17,26 @@ const Conatiner = styled.section`
     margin-top: 6rem;
     margin-bottom: 4rem;
     font-weight: 500;
-    color: ${config.secondaryColor};
+    color: ${theme.secondaryColor};
   }
 
   .text {
     margin-top: 2rem;
-    color: ${config.secondaryColor};
+    color: ${theme.secondaryColor};
     font-weight: 200;
     line-height: 1.5;
   }
 
   .text-two {
     margin-top: 2rem;
-    color: ${config.secondaryColor};
+    color: ${theme.secondaryColor};
     font-weight: 200;
     padding-bottom: 10rem;
   }
 `;
 
 const Customer = () => (
-  <Conatiner className="section">
+  <Conatiner id="customer-engagement" className="section">
     <div className="container">
       <div className="columns">
         <div className="column">

@@ -8,20 +8,19 @@ const Container = styled.div`
   margin-top: 1rem;
   font-family: ${theme.primaryFontFamily};
   background-color: #aabcbf;
-  @media only screen and (max-width: 768px) {
-    margin-top: 0rem;
-  }
+
   .subtitle {
     margin: 3rem;
     font-weight: 500;
-  }
+
   .text {
-    font-size: 13px;
+    font-size: ${theme.fontSize};
     font-weight: 500;
     letter-spacing: 1.1px;
     line-height: 2;
     padding: 0rem 10rem;
   }
+
   .button {
     margin-top: 4rem;
     background: transparent;
@@ -30,14 +29,14 @@ const Container = styled.div`
 `;
 
 const LinkStyled = styled(AnchorLink)`
-  font-size: 14px;
+  font-size: ${theme.fontSize};
 `;
 
 const About = () => (
   <Container id="about" className="container">
     <section className="section">
       <div className="has-text-centered">
-        <h2 className="subtitle is-6 has-text-white">
+        <h2 className="subtitle is-5 has-text-white">
           WHAT IS A REVERSE VENDING MACHINE?
         </h2>
         <div className="columns is-mobile is-centered">
@@ -54,7 +53,7 @@ const About = () => (
               compacts and stores bottles and cans. RVMs provide a simple and
               effLinkctive solution to beverage container waste.
             </p>
-            <LinkStyled href="#contact" className="button has-text-white">
+            <LinkStyled href="#contact" className="has-text-white">
               Contact
             </LinkStyled>
           </div>
