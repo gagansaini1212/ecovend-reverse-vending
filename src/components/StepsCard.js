@@ -14,13 +14,13 @@ const Container = styled.div`
   }
 `;
 
-const StepsCard = props => (
-  <Container>
+const StepsCard = ({ title, description, padding }) => (
+  <Container padding={padding}>
     <div className="card">
       <div className="card-content my">
         <div className="has-text-centered">
-          <h3 className="subtitle is-5 card-para">{props.title}</h3>
-          <h4 className="subtitle is-5  card-para">{props.description}</h4>
+          <h3 className="subtitle is-5 card-para">{title}</h3>
+          <h4 className="subtitle is-5  card-para">{description}</h4>
         </div>
       </div>
     </div>
