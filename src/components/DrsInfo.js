@@ -15,7 +15,6 @@ const Conatiner = styled.div`
   .para {
     color: ${theme.primaryColor};
     line-height: 1.75rem;
-    padding: 0.3rem 3.65rem;
     font-size: ${theme.fontSize};
     margin-top: 5rem;
   }
@@ -25,7 +24,7 @@ const DrsInfo = () => (
   <Conatiner id="drs" className="container">
     <div className="has-text-centered">
       <div className="columns is-mobile is-centered">
-        <div className="column is-three-quarters">
+        <div className="column is-two-thirds">
           <h4 className="subtitle is-4 text">
             HOW ARE REVERSE VENDING MACHINES BEING USED?
           </h4>
