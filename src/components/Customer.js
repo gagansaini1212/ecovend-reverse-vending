@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import config from '../utils/config';
 
-const Conatiner = styled.div`
+const Conatiner = styled.section`
   font-family: 'Raleway', sans-serif;
   background-color: #e1eff2;
 
@@ -35,25 +35,23 @@ const Conatiner = styled.div`
 `;
 
 const Customer = () => (
-  <Conatiner>
-    <div className="columns">
-      <div className="column  ">
-        <div className="columns is-centered ">
-          <div className="column is-four-fifths first-column">
-            <h1 className="Heading">ENGAGING WITH THE CUSTOMER</h1>
-            <p className="text">
-              Whilst Reverse vending has an impressive proven track record with
-              customer take up lets explore why this modern means of recycling
-              is making the world think greener.
-            </p>
-            <p className="text-two">
-              With conveniently located RV machines it’s a quick and easy way to
-              recycle ‘on the go’.
-            </p>
-          </div>
+  <Conatiner className="section">
+    <div className="container">
+      <div className="columns">
+        <div className="column">
+          <h1 className="Heading">ENGAGING WITH THE CUSTOMER</h1>
+          <p className="text">
+            Whilst Reverse vending has an impressive proven track record with
+            customer take up lets explore why this modern means of recycling is
+            making the world think greener.
+          </p>
+          <p className="text-two">
+            With conveniently located RV machines it’s a quick and easy way to
+            recycle ‘on the go’.
+          </p>
         </div>
+        <div className="column" />
       </div>
-      <div className="column " />
     </div>
   </Conatiner>
 );

@@ -30,18 +30,22 @@ class GoogleMap extends React.Component {
     // console.log('center', center);
 
     return (
-      <div style={{ height: '60vh', width: '100%' }}>
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: config.google.key }}
-          defaultCenter={center}
-          defaultZoom={zoom}>
-          <AnyReactComponent
-            lat={center.lat}
-            lng={center.lng}
-            text="Drop location"
-          />
-        </GoogleMapReact>
-      </div>
+      <section className="section">
+        <div className="container">
+          <div style={{ height: '60vh', width: '100%' }}>
+            <GoogleMapReact
+              bootstrapURLKeys={{ key: config.google.key }}
+              defaultCenter={center}
+              defaultZoom={zoom}>
+              <AnyReactComponent
+                lat={center.lat}
+                lng={center.lng}
+                text="Drop location"
+              />
+            </GoogleMapReact>
+          </div>
+        </div>
+      </section>
     );
   }
 }

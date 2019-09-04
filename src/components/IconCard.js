@@ -4,10 +4,13 @@ import styled from 'styled-components';
 const Container = styled.div`
   font-family: 'Raleway', sans-serif;
   :last-child {
-    height: 91%;
+    height: 100%;
   }
   .card {
     height: 100% !important;
+  }
+  img {
+    width: 60%;
   }
 `;
 

@@ -12,7 +12,7 @@ const Conatiner = styled.div`
     font-weight: 500;
   }
   .video {
-    width: 85%;
+    width: 80%;
     height: 34rem;
     @media only screen and (max-width: 768px) {
       height: auto;

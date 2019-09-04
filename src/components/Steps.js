@@ -15,7 +15,7 @@ const Container = styled.div`
 
   .heading {
     padding-top: 8rem;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   .para {
@@ -30,7 +30,7 @@ const Steps = () => (
       <div className="column is-three-quarters">
         <div className="container">
           <div className="has-text-centered">
-            <h1 className="title is-2 heading">
+            <h1 className="title is-2 heading has-text-weight-bold">
               REVERSE VENDING, AS SIMPLE AS 1, 2, 3
             </h1>
             <p className="para">

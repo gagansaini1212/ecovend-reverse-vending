@@ -2,8 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import config from '../utils/config';
 
-const Conatiner = styled.div`
-  margin-top: 0.79rem;
+const Conatiner = styled.section`
   font-family: 'Raleway', sans-serif;
   background-color: ${config.secondaryColor};
 
@@ -22,12 +21,13 @@ const Conatiner = styled.div`
 
   .photos {
     margin-top: 2rem;
+    justify-content: center;
   }
 `;
 
 const Advertisment = () => (
-  <Conatiner>
-    <section className="section">
+  <Conatiner className="section">
+    <div className="container">
       <div className="columns  is-centered">
         <div className="column is-two-thirds has-text-centered has-text-white	">
           <h1 className="has-text-weight-medium top ">
@@ -42,21 +42,30 @@ const Advertisment = () => (
           </p>
         </div>
       </div>
-      <div className="columns   photos">
-        <div className="column ">
-          <img src="/images/Advertisment-one.jpg" />
-        </div>
-        <div className="column">
+      <div className="columns photos">
+        <div className="column is-3">
           <img
-            src="/images/Advertisment-two.jpg"
-            style={{ height: '33.80rem' }}
+            src="/images/Advertisment-one.jpg"
+            alt="drink cans"
+            style={{ height: '72%' }}
           />
         </div>
-        <div className="column">
-          <img src="/images/Advertisment-three.jpg" />
+        <div className="column is-3">
+          <img
+            src="/images/Advertisment-two.jpg"
+            alt="plastic bottles"
+            style={{ height: '72%' }}
+          />
+        </div>
+        <div className="column is-3">
+          <img
+            src="/images/Advertisment-three.jpg"
+            alt="preserve planet"
+            style={{ height: '72%' }}
+          />
         </div>
       </div>
-    </section>
+    </div>
   </Conatiner>
 );
 
