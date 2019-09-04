@@ -32,9 +32,7 @@ const Footer = () => (
               <i className="fab fa-linkedin" />
             </div>
           </div>
-          <p className="text">
-            ©2019 by EcoVend Reverse Vending. Proudly created with Wix.com
-          </p>
+          <p className="text">©2019 by EcoVend Reverse Vending.</p>
         </div>
       </div>
     </section>

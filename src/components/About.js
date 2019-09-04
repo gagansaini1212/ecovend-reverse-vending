@@ -2,9 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
+import theme from '../utils/theme';
+
 const Container = styled.div`
   margin-top: 1rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: ${theme.primaryFontFamily};
   background-color: #aabcbf;
   @media only screen and (max-width: 768px) {
     margin-top: 0rem;

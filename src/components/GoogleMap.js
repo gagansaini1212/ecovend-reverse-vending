@@ -4,15 +4,19 @@ import GoogleMapReact from 'google-map-react';
 
 import config from '../utils/config';
 
+const Conatiner = styled.section`
+  background-color: #e1eff2;
+`;
+
 const PinIcon = styled.i`
-  width: 40px;
+  width: 80px;
   height: auto;
   color: red;
 `;
 
 const AnyReactComponent = ({ text }) => (
   <span className="icon">
-    <PinIcon className="fas fa-thumbtack" title={text} />
+    <PinIcon className="fas fa-map-marker-alt" title={text} />
   </span>
 );
 
@@ -30,7 +34,7 @@ class GoogleMap extends React.Component {
     // console.log('center', center);
 
     return (
-      <section className="section">
+      <Conatiner className="section">
         <div className="container">
           <div style={{ height: '60vh', width: '100%' }}>
             <GoogleMapReact
@@ -45,7 +49,7 @@ class GoogleMap extends React.Component {
             </GoogleMapReact>
           </div>
         </div>
-      </section>
+      </Conatiner>
     );
   }
 }

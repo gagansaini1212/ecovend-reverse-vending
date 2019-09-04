@@ -1,18 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import config from '../utils/config';
+import theme from '../utils/theme';
 
 const HeadingStyled = styled.div`
   margin-top: 2rem;
   .tabs ul {
     padding-bottom: 2rem;
-    border-bottom: 1.25px solid ${config.primaryColor};
+    border-bottom: 1.25px solid ${theme.primaryColor};
   }
   .tabs a {
-    border-bottom: 0px;
-    font-size: 14px;
-    color: ${config.primaryColor};
+    border-bottom: transparent;
+    font-size: ${theme.fontSize};
+    color: ${theme.primaryColor};
   }
 `;
 

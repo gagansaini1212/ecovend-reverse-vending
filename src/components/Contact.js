@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import config from '../utils/config';
+import ContactForm from './ContactForm';
 
 const Container = styled.section`
   background-color: #e1eff2;
@@ -31,7 +32,7 @@ const Container = styled.section`
   }
 
   textarea {
-    border-bottom: 1px solid ${config.secondaryColor} !important;
+    border: 1px solid ${config.secondaryColor} !important;
     background-color: #fff;
     border-color: #fff;
     border-radius: 0px;
@@ -56,104 +57,40 @@ const Container = styled.section`
   }
 
   .control {
+    padding: 1rem;
     :hover {
       border-color: #fff;
     }
-    :focus,
-    :active {
-      border-color: #719ece;
-    }
+  }
+
+  .is-7 {
+    align-self: center;
   }
 `;
 
 const Contact = () => (
-  <Container>
-    <section className="section">
-      <div className="container">
-        <div className="columns is-8">
-          <div className="column has-text-centered is-7 ">
-            <h1 className="subtitle is-2 text">GET IN TOUCH</h1>
-            <h4 className="subtitle is-6 text">
-              ECO House, Lea Road, Waltham Abbey, Hertfordshire, EN9 1AS
-            </h4>
-            <h4 className="subtitle is-6 text">info@eco-vend.co.uk</h4>
-            <h4 className="subtitle is-6 text">08700 777 555</h4>
-          </div>
-          <div className="column">
-            <div>
-              <div className="field is-horizontal">
-                <div className="field-body">
-                  <div className="field">
-                    <p className="control ">
-                      <input className="input" type="text" placeholder="Name" />
-                    </p>
-                  </div>
-                  <div className="field">
-                    <p className=" ">
-                      <input
-                        className="input "
-                        type="email"
-                        placeholder="Email"
-                      />
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="field is-horizontal">
-                <div className="field-body">
-                  <div className="field">
-                    <p className="control ">
-                      <input
-                        className="input"
-                        type="text"
-                        placeholder="Phone"
-                      />
-                    </p>
-                  </div>
-                  <div className="field">
-                    <p className=" ">
-                      <input
-                        className="input "
-                        type="email"
-                        placeholder="Address"
-                      />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+  <Container className="section">
+    <div className="container">
+      <div className="columns">
+        <div className="column has-text-centered is-7">
+          <h1 className="subtitle is-2 text">GET IN TOUCH</h1>
+          <h4 className="subtitle is-6 text">
+            ECO House, Lea Road, Waltham Abbey, Hertfordshire, EN9 1AS
+          </h4>
+          <h4 className="subtitle is-6 text">info@eco-vend.co.uk</h4>
+          <h4 className="subtitle is-6 text">08700 777 555</h4>
+        </div>
+        <div className="column">
+          <div>
             <div className="field is-horizontal">
               <div className="field-body">
-                <div className="field">
-                  <div className="control">
-                    <input
-                      className="input "
-                      type="text"
-                      placeholder="Subject"
-                    />
-                  </div>
-                </div>
+                <ContactForm />
               </div>
             </div>
-
-            <div className="field is-horizontal">
-              <div className="field-body">
-                <div className="field">
-                  <div className="control">
-                    <textarea
-                      className="textarea"
-                      placeholder="Type your message here"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button className="button is-primary is-fullwidth">Submit</button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </Container>
 );
 

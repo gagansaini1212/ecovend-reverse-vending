@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import config from '../utils/config';
 
 const Conatiner = styled.section`
@@ -23,6 +24,10 @@ const Conatiner = styled.section`
     margin-top: 2rem;
     justify-content: center;
   }
+
+  img {
+    height: 100%;
+  }
 `;
 
 const Advertisment = () => (
@@ -31,7 +36,7 @@ const Advertisment = () => (
       <div className="columns  is-centered">
         <div className="column is-two-thirds has-text-centered has-text-white	">
           <h1 className="has-text-weight-medium top ">
-            BRAND MESSAGING, ADVERTISING IT'S YOUR CHOICE?
+            BRAND MESSAGING, ADVERTISING IT&apos;S YOUR CHOICE?
           </h1>
           <p className="text">
             Our audio visual video campaign is designed to engage, educate and
@@ -43,26 +48,14 @@ const Advertisment = () => (
         </div>
       </div>
       <div className="columns photos">
-        <div className="column is-3">
-          <img
-            src="/images/Advertisment-one.jpg"
-            alt="drink cans"
-            style={{ height: '72%' }}
-          />
+        <div className="column is-4">
+          <img src="/images/Advertisment-one.jpg" alt="drink cans" />
         </div>
-        <div className="column is-3">
-          <img
-            src="/images/Advertisment-two.jpg"
-            alt="plastic bottles"
-            style={{ height: '72%' }}
-          />
+        <div className="column is-4">
+          <img src="/images/Advertisment-two.jpg" alt="plastic bottles" />
         </div>
-        <div className="column is-3">
-          <img
-            src="/images/Advertisment-three.jpg"
-            alt="preserve planet"
-            style={{ height: '72%' }}
-          />
+        <div className="column is-4">
+          <img src="/images/Advertisment-three.jpg" alt="preserve planet" />
         </div>
       </div>
     </div>
