@@ -10,11 +10,23 @@ const Navbar = styled.div`
   .navbar-item img {
     max-height: none;
   }
+
+  .is-active {
+    color: #e1e8e9 !important;
+    @media only screen and (max-width: 768px) {
+      color: black !important;
+    }
+  }
+
   .navbar-item {
     transition: color 0.2s;
     :hover {
       background: transparent;
       color: #e1e8e9;
+    }
+    :focus-within {
+      background: transparent;
+      color: ${theme.primaryColor};
     }
   }
   .navbar-end {
