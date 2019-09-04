@@ -5,11 +5,20 @@ import theme from '../utils/theme';
 import ContactForm from './ContactForm';
 
 const Container = styled.section`
+  padding: 3rem 1.5rem 0rem 1.5rem;
   background-color: #e1eff2;
   font-family: ${theme.primaryFontFamily};
+
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
+
   .columns {
     background-color: #ffffff;
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
   }
+
   .column {
     margin-top: 3rem;
     padding-bottom: 3rem;

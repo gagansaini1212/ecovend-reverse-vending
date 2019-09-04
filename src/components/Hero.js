@@ -5,6 +5,12 @@ import theme from '../utils/theme';
 
 const Container = styled.section`
   font-family: ${theme.primaryFontFamily};
+
+  .columns {
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+  }
+
   .title {
     color: #f26a16;
     font-size: 72px;
@@ -15,6 +21,7 @@ const Container = styled.section`
       font-size: 50px;
     }
   }
+
   .subtitle {
     color: #f26a16;
     font-size: ${theme.fontSizeMedium};

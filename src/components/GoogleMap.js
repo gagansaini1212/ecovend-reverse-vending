@@ -5,6 +5,7 @@ import GoogleMapReact from 'google-map-react';
 import config from '../utils/config';
 
 const Conatiner = styled.section`
+  padding: 1rem 1.5rem 5rem 1.5rem;
   background-color: #e1eff2;
 `;
 
@@ -34,9 +35,9 @@ class GoogleMap extends React.Component {
     // console.log('center', center);
 
     return (
-      <Conatiner className="section">
+      <Conatiner className="section is-hidden-mobile">
         <div className="container">
-          <div style={{ height: '60vh', width: '100%' }}>
+          <div style={{ height: '100vh', width: '100%' }}>
             <GoogleMapReact
               bootstrapURLKeys={{ key: config.google.key }}
               defaultCenter={center}

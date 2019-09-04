@@ -9,6 +9,12 @@ const Container = styled.div`
   background-color: #f1f1f1;
   font-family: ${theme.primaryFontFamily};
   padding-bottom: 5rem;
+
+  .columns {
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+  }
+
   .title {
     color: ${theme.primaryColor};
   }

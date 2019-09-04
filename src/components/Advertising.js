@@ -7,6 +7,11 @@ const Conatiner = styled.section`
   font-family: ${theme.primaryFontFamily};
   background-color: ${theme.secondaryColor};
 
+  .columns {
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+  }
+
   .section {
     padding: 3rem 1.5rem 0rem 1.5rem;
   }

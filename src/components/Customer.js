@@ -3,14 +3,17 @@ import styled from 'styled-components';
 
 import theme from '../utils/theme';
 
-const Conatiner = styled.section`
+const Conatiner = styled.div`
   font-family: ${theme.primaryFontFamily};
   background-color: #e1eff2;
 
-  .background {
-    background: url('/images/Customer.jpg');
-    background-repeat: no-repeat;
-    background-size: auto;
+  .column {
+    padding: 0 !important;
+  }
+
+  .columns {
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
   }
 
   .Heading {
@@ -36,22 +39,26 @@ const Conatiner = styled.section`
 `;
 
 const Customer = () => (
-  <Conatiner id="customer-engagement" className="section">
-    <div className="container">
-      <div className="columns">
-        <div className="column">
-          <h1 className="Heading">ENGAGING WITH THE CUSTOMER</h1>
-          <p className="text">
-            Whilst Reverse vending has an impressive proven track record with
-            customer take up lets explore why this modern means of recycling is
-            making the world think greener.
-          </p>
-          <p className="text-two">
-            With conveniently located RV machines it’s a quick and easy way to
-            recycle ‘on the go’.
-          </p>
+  <Conatiner id="customer-engagement">
+    <div className="columns">
+      <div className="column">
+        <div className="columns is-mobile is-centered">
+          <div className="column is-four-fifths">
+            <h1 className="Heading">ENGAGING WITH THE CUSTOMER</h1>
+            <p className="text">
+              Whilst Reverse vending has an impressive proven track record with
+              customer take up lets explore why this modern means of recycling
+              is making the world think greener.
+            </p>
+            <p className="text-two">
+              With conveniently located RV machines it’s a quick and easy way to
+              recycle ‘on the go’.
+            </p>
+          </div>
         </div>
-        <div className="column" />
+      </div>
+      <div className="column">
+        <img src="/images/Customer.jpg" alt="Customer" />
       </div>
     </div>
   </Conatiner>
