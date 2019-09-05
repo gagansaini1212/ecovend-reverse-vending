@@ -10,7 +10,8 @@ const Container = styled.section`
   font-family: ${theme.primaryFontFamily};
 
   @media only screen and (max-width: 768px) {
-    margin-bottom: 1rem;
+    padding-bottom: 3rem;
+    margin-bottom: -2rem;
   }
 
   .columns {

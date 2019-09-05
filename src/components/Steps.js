@@ -75,7 +75,7 @@ const Steps = () => (
               <IconCard Link="/images/Icons/crusher.png" />
               <Stepscard
                 card=" 1rem 1rem 0rem 1rem"
-                padding=" 1rem 1rem 0rem 1rem"
+                padding=" 1.5rem 1rem 0rem 1rem"
                 title="STEP 3"
                 description="The machine issues a reward voucher or an electronic credit."
               />

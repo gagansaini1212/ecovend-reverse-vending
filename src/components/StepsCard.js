@@ -11,6 +11,7 @@ const Container = styled.div`
     padding: 1rem;
     margin-top: none;
   }
+
   .card {
     padding: ${props => props.padding};
     @media only screen and (max-width: 768px) {

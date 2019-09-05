@@ -1,58 +1,49 @@
 import React from 'react';
 import styled from 'styled-components';
-import GoogleMapReact from 'google-map-react';
+import { compose, withProps } from 'recompose';
+import {
+  withScriptjs,
+  withGoogleMap,
+  GoogleMap,
+  Marker,
+} from 'react-google-maps';
 
-import config from '../utils/config';
-
-const Conatiner = styled.section`
-  padding: 1rem 1.5rem 5rem 1.5rem;
-  background-color: #e1eff2;
+const Container = styled.div`
+  background: red;
 `;
 
-const PinIcon = styled.i`
-  width: 80px;
-  height: auto;
-  color: red;
-`;
+const MyMapComponent = compose(
+  withProps({
+    /**
+     * Note: create and replace your own key in the Google console.
+     * https://console.developers.google.com/apis/dashboard
+     * The key "AIzaSyBkNaAGLEVq0YLQMi-PYEMabFeREadYe1Q" can be ONLY used in this sandbox (no forked).
+     */
+    googleMapURL:
+      'https://maps.googleapis.com/maps/api/js?key=AIzaSyARq3lIWaDnlepdOd2alXdFzuTcd-PyGdY',
+    loadingElement: <div style={{ height: `100%` }} />,
+    containerElement: (
+      <div
+        className="is-hidden-mobile"
+        style={{
+          background: '#e1eff2',
+          height: `40rem`,
+          padding: '0.75rem 6rem 11rem 6rem',
+        }}
+      />
+    ),
+    mapElement: <div style={{ height: `100%` }} />,
+  }),
+  withScriptjs,
+  withGoogleMap,
+)(props => (
+  <GoogleMap
+    defaultZoom={20}
+    defaultCenter={{ lat: 51.685733, lng: -0.012903 }}>
+    {props.isMarkerShown && (
+      <Marker position={{ lat: 51.685733, lng: -0.012903 }} />
+    )}
+  </GoogleMap>
+));
 
-const AnyReactComponent = ({ text }) => (
-  <span className="icon">
-    <PinIcon className="fas fa-map-marker-alt" title={text} />
-  </span>
-);
-
-class GoogleMap extends React.Component {
-  static defaultProps = {
-    center: {
-      lat: 51.682929,
-      lng: -0.012764,
-    },
-    zoom: 17,
-  };
-
-  render() {
-    const { center, zoom } = this.props;
-    // console.log('center', center);
-
-    return (
-      <Conatiner className="section is-hidden-mobile">
-        <div className="container">
-          <div style={{ height: '100vh', width: '100%' }}>
-            <GoogleMapReact
-              bootstrapURLKeys={{ key: config.google.key }}
-              defaultCenter={center}
-              defaultZoom={zoom}>
-              <AnyReactComponent
-                lat={center.lat}
-                lng={center.lng}
-                text="Our location"
-              />
-            </GoogleMapReact>
-          </div>
-        </div>
-      </Conatiner>
-    );
-  }
-}
-
-export default GoogleMap;
+export default MyMapComponent;

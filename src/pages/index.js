@@ -12,7 +12,7 @@ import Choose from '../components/Choose';
 import Customer from '../components/Customer';
 import Advertisment from '../components/Advertising';
 import Contact from '../components/Contact';
-import GoogleMap from '../components/GoogleMap';
+import MyMapComponent from '../components/GoogleMap';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -32,7 +32,7 @@ export default class IndexPage extends React.Component {
         <Customer />
         <Advertisment />
         <Contact />
-        <GoogleMap />
+        <MyMapComponent isMarkerShown className="is-hidden-mobile" />,
       </Layout>
     );
   }
