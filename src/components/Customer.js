@@ -58,7 +58,7 @@ const Customer = () => (
         </div>
       </div>
       <div className="column">
-        <img src="/images/Customer.jpg" alt="Customer" />
+        <img src="/images/customer.jpg" alt="Customer" />
       </div>
     </div>
   </Conatiner>

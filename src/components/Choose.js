@@ -28,7 +28,7 @@ const Choose = () => (
             </h1>
             <div className="columns">
               <div className="column  has-text-centered">
-                <img src="/images/Icons/Earth.png" alt="Save Earth" />
+                <img src="/images/Icons/earth.png" alt="Save Earth" />
                 <h1 className="subtitle is-5 has-text-white has-text-weight-medium">
                   Help save the planet for generation to come
                 </h1>
@@ -44,14 +44,14 @@ const Choose = () => (
                 </h1>
               </div>
               <div className="column has-text-centered">
-                <img src="/images/Icons/Money.png" alt="Attract Customer" />
+                <img src="/images/Icons/money.png" alt="Attract Customer" />
                 <h1 className="subtitle is-5 has-text-white has-text-weight-medium ">
                   Attract and Engage with Customers
                 </h1>
               </div>
               <div className="column has-text-centered">
                 <img
-                  src="/images/Icons/Business.png"
+                  src="/images/Icons/business.png"
                   alt="Business Sense"
                   style={{ padding: '1rem 0rem 0rem 0rem' }}
                 />
@@ -61,7 +61,7 @@ const Choose = () => (
               </div>
               <div className="column has-text-centered">
                 <img
-                  src="/images/Icons/Sound.png"
+                  src="/images/Icons/sound.png"
                   alt="Revenue"
                   style={{ padding: '1rem 0rem 0rem 0rem' }}
                 />

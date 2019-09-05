@@ -27,7 +27,6 @@ const Conatiner = styled.section`
 
   .photos {
     margin-top: 2rem;
-    justify-content: center;
   }
 
   img {
@@ -54,13 +53,13 @@ const Advertisment = () => (
       </div>
       <div className="columns photos">
         <div className="column is-4">
-          <img src="/images/Advertisment-one.jpg" alt="drink cans" />
+          <img src="/images/advertisment-one.jpg" alt="drink cans" />
         </div>
         <div className="column is-4">
-          <img src="/images/Advertisment-two.jpg" alt="plastic bottles" />
+          <img src="/images/advertisment-two.jpg" alt="plastic bottles" />
         </div>
         <div className="column is-4">
-          <img src="/images/Advertisment-three.jpg" alt="preserve planet" />
+          <img src="/images/advertisment-three.jpg" alt="preserve planet" />
         </div>
       </div>
     </div>

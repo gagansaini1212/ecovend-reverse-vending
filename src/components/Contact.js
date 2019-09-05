@@ -55,7 +55,6 @@ const Container = styled.section`
 
   .button {
     font-size: 1rem;
-    color: #fff;
     font-weight: 400;
     background-color: ${theme.secondaryColor};
     transition: opacity 0.2s;
