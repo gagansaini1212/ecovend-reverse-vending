@@ -10,6 +10,10 @@ const Container = styled.div`
   background-color: #aabcbf;
   padding-bottom: 2rem;
 
+  .columns {
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+  }
   .subtitle {
     margin: 3rem;
     font-weight: 500;

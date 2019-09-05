@@ -8,7 +8,13 @@ import IconCard from './IconCard';
 const Container = styled.div`
   background-color: #f1f1f1;
   font-family: ${theme.primaryFontFamily};
-  margin-bottom: 2rem;
+  padding-bottom: 5rem;
+
+  .columns {
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+  }
+
   .title {
     color: ${theme.primaryColor};
   }
@@ -50,12 +56,16 @@ const Steps = () => (
             <div className="column rev">
               <IconCard Link="/images/Icons/Bottle.png" />
               <Stepscard
+                card="1rem 0.5rem 0rem 0.5rem"
+                padding="0.75rem 1rem 0.70rem 1rem;"
                 title="STEP 1"
                 description="Load empty beverage containers into the chute."
               />
             </div>
             <div className="column">
               <Stepscard
+                card="1rem"
+                padding="1rem 0rem 0.90rem 0rem;"
                 title="STEP 2"
                 description="The bar code is scanned and logged."
               />
@@ -64,6 +74,8 @@ const Steps = () => (
             <div className="column rev">
               <IconCard Link="/images/Icons/crusher.png" />
               <Stepscard
+                card=" 1rem 1rem 0rem 1rem"
+                padding=" 1rem 1rem 0rem 1rem"
                 title="STEP 3"
                 description="The machine issues a reward voucher or an electronic credit."
               />

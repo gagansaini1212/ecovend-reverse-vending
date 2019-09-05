@@ -6,12 +6,19 @@ import theme from '../utils/theme';
 const Conatiner = styled.div`
   font-family: ${theme.primaryFontFamily};
   padding-bottom: 10rem;
+
+  .columns {
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+  }
+
   .text {
     color: ${theme.primaryColor};
     margin-top: 10rem;
     font-weight: 500;
     font-size: ${theme.fontSizeMedium};
   }
+
   .para {
     color: ${theme.primaryColor};
     line-height: 1.75rem;
@@ -23,7 +30,7 @@ const Conatiner = styled.div`
 const DrsInfo = () => (
   <Conatiner id="drs" className="container">
     <div className="has-text-centered">
-      <div className="columns is-mobile is-centered">
+      <div className="columns  is-centered">
         <div className="column is-two-thirds">
           <h4 className="subtitle is-4 text">
             HOW ARE REVERSE VENDING MACHINES BEING USED?

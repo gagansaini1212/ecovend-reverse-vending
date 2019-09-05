@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import theme from '../utils/theme';
 
@@ -16,22 +17,30 @@ const Conatiner = styled.div`
   }
 `;
 
+const LinkStyled = styled(AnchorLink)`
+  color: #fff;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  :hover {
+    color: #fff;
+  
+`;
+
 const Footer = () => (
   <Conatiner>
     <section className="section">
       <div className="columns is-centered">
         <div className="column is-two-thirds has-text-centered has-text-white	">
           <h1 className="has-text-weight-medium top ">08700 777 555</h1>
-          <div>
-            <div className="icon ">
+          <div className="icon">
+            <LinkStyled>
               <i className="fab fa-facebook-square" />
-            </div>
-            <div className="icon">
+            </LinkStyled>
+            <LinkStyled>
               <i className="fab fa-twitter-square" />
-            </div>
-            <div className="icon">
+            </LinkStyled>
+            <LinkStyled>
               <i className="fab fa-linkedin" />
-            </div>
+            </LinkStyled>
           </div>
           <p className="text">©2019 by EcoVend Reverse Vending.</p>
         </div>
