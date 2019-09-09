@@ -7,14 +7,23 @@ import theme from '../utils/theme';
 const Container = styled.div`
   font-family: 'Raleway', sans-serif;
   padding: ${props => props.card};
+  margin: 1rem 0rem;
   @media only screen and (max-width: 768px) {
-    padding: 1rem;
-    margin-top: none;
+    padding-top: 2rem;
   }
+
   .card {
+    height: 13rem;
+    width: 15rem;
     padding: ${props => props.padding};
     @media only screen and (max-width: 768px) {
-      padding: 0rem;
+      height: 18rem;
+      width: 100%;
+    }
+  }
+  .card-content {
+    @media only screen and (max-width: 768px) {
+      padding: 5rem 2rem 0rem 1rem;
     }
   }
 
@@ -24,8 +33,8 @@ const Container = styled.div`
   }
 `;
 
-const StepsCard = ({ title, description, padding, card }) => (
-  <Container padding={padding} card={card}>
+const StepsCard = ({ title, description }) => (
+  <Container className="has-text-centered">
     <div className="card">
       <div className="card-content">
         <div className="has-text-centered">

@@ -39,7 +39,7 @@ const Container = styled.div`
 
 const Steps = () => (
   <Container id="steps">
-    <div className="columns is-centered">
+    <div className="columns is-centered ">
       <div className="column is-three-quarters">
         <div className="container">
           <div className="has-text-centered">
@@ -52,34 +52,28 @@ const Steps = () => (
               Machines
             </p>
           </div>
-          <div className="columns">
-            <div className="column rev">
-              <IconCard Link="/images/Icons/Bottle.png" />
-              <Stepscard
-                card="1rem 0.5rem 0rem 0.5rem"
-                padding="0.75rem 1rem 0.70rem 1rem;"
-                title="STEP 1"
-                description="Load empty beverage containers into the chute."
-              />
-            </div>
-            <div className="column">
-              <Stepscard
-                card="1rem"
-                padding="1rem 0rem 0.90rem 0rem;"
-                title="STEP 2"
-                description="The bar code is scanned and logged."
-              />
-              <IconCard Link="/images/Icons/barcode.png" />
-            </div>
-            <div className="column rev">
-              <IconCard Link="/images/Icons/crusher.png" />
-              <Stepscard
-                card=" 1rem 1rem 0rem 1rem"
-                padding=" 1rem 1rem 0rem 1rem"
-                title="STEP 3"
-                description="The machine issues a reward voucher or an electronic credit."
-              />
-            </div>
+        </div>
+        <div className="columns   is-centered">
+          <div className="column rev is-3 ">
+            <IconCard Link="/images/Icons/Bottle.png" />
+            <Stepscard
+              title="STEP 1"
+              description="Load empty beverage containers into the chute."
+            />
+          </div>
+          <div className="column is-3">
+            <Stepscard
+              title="STEP 2"
+              description="The bar code is scanned and logged."
+            />
+            <IconCard Link="/images/Icons/barcode.png" />
+          </div>
+          <div className="column rev is-3">
+            <IconCard Link="/images/Icons/crusher.png" />
+            <Stepscard
+              title="STEP 3"
+              description="The machine issues a reward voucher or an electronic credit."
+            />
           </div>
         </div>
       </div>

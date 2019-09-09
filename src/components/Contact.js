@@ -10,7 +10,8 @@ const Container = styled.section`
   font-family: ${theme.primaryFontFamily};
 
   @media only screen and (max-width: 768px) {
-    margin-bottom: 1rem;
+    padding-bottom: 3rem;
+    margin-bottom: -2rem;
   }
 
   .columns {
@@ -55,7 +56,6 @@ const Container = styled.section`
 
   .button {
     font-size: 1rem;
-    color: #fff;
     font-weight: 400;
     background-color: ${theme.secondaryColor};
     transition: opacity 0.2s;

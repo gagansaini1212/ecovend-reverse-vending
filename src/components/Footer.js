@@ -7,6 +7,11 @@ import theme from '../utils/theme';
 const Conatiner = styled.div`
   font-family: ${theme.primaryFontFamily};
   background-color: ${theme.secondaryColor};
+  margin-top: -2rem;
+
+  @media only screen and (max-width: 768px) {
+    margin-top: 0rem;
+  }
 
   .icon {
     margin-top: 1rem;
