@@ -17,6 +17,9 @@ const Conatiner = styled.div`
     margin-top: 10rem;
     font-weight: 500;
     font-size: ${theme.fontSizeMedium};
+    @media only screen and (max-width: 768px) {
+      margin-top: 5rem;
+    }
   }
 
   .para {

@@ -3,12 +3,12 @@ import styled from 'styled-components';
 
 import theme from '../utils/theme';
 
-const Conatiner = styled.section`
+const Conatiner = styled.div`
   font-family: ${theme.primaryFontFamily};
   background-color: ${theme.secondaryColor};
 
   .columns {
-    margin-left: 0rem !important;
+    margin-left: 0rdem !important;
     margin-right: 0rem !important;
   }
 
@@ -26,41 +26,54 @@ const Conatiner = styled.section`
   }
 
   .photos {
-    margin-top: 2rem;
+    margin-top: 3.5rem !important;
   }
 
   img {
     height: 100%;
+    object-fit: cover;
+    width: 100%;
   }
 `;
 
 const Advertisment = () => (
-  <Conatiner id="advertising" className="section">
-    <div className="container">
-      <div className="columns  is-centered">
-        <div className="column is-two-thirds has-text-centered has-text-white	">
-          <h1 className="has-text-weight-medium top ">
-            BRAND MESSAGING, ADVERTISING IT&apos;S YOUR CHOICE?
-          </h1>
-          <p className="text">
-            Our audio visual video campaign is designed to engage, educate and
-            influence the perception of waste and encourage accountability and
-            positive motivation. These videos are supplied with each AV machine
-            and can be easily customised to accommodate the buyers desired brand
-            messaging or advertising needs.
-          </p>
+  <Conatiner id="advertising">
+    <section className="section">
+      <div className="container">
+        <div className="columns  is-centered">
+          <div className="column is-two-thirds has-text-centered has-text-white	">
+            <h1 className="has-text-weight-medium top ">
+              BRAND MESSAGING, ADVERTISING IT&apos;S YOUR CHOICE?
+            </h1>
+            <p className="text">
+              Our audio visual video campaign is designed to engage, educate and
+              influence the perception of waste and encourage accountability and
+              positive motivation. These videos are supplied with each AV
+              machine and can be easily customised to accommodate the buyers
+              desired brand messaging or advertising needs.
+            </p>
+          </div>
         </div>
       </div>
-      <div className="columns photos">
-        <div className="column is-4">
-          <img src="/images/advertisment-one.jpg" alt="drink cans" />
-        </div>
-        <div className="column is-4">
-          <img src="/images/advertisment-two.jpg" alt="plastic bottles" />
-        </div>
-        <div className="column is-4">
-          <img src="/images/advertisment-three.jpg" alt="preserve planet" />
-        </div>
+    </section>
+    <div className="columns   is-multiline  photos ">
+      <div className="column is-4 is-gapless is-marginless is-paddingless">
+        <img src="/images/advertisment-one.jpg" alt="#" />
+      </div>
+      <div className="column is-4 is-paddingless">
+        <img src="/images/advertisment-two.jpg" alt="#" />
+      </div>
+      <div className="column is-4 is-paddingless">
+        <img src="/images/advertisment-three.jpg" alt="#" />
+      </div>
+      <div className="column is-4 is-paddingless">
+        <img src="/images/advertisment-four.jpg" alt="#" />
+      </div>
+      <div className="column is-4 is-paddingless">
+        <img src="/images/advertisment-five.jpg" alt="#" />
+      </div>
+      <div className="column is-4 is-paddingless">
+        <img src="/images/advertisment-six.jpg" alt="#" />
       </div>
     </div>
   </Conatiner>
