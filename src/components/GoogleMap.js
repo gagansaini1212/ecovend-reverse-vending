@@ -28,7 +28,6 @@ const MyMapComponent = compose(
         style={{
           background: '#e1eff2',
           height: `40rem`,
-          padding: '0.75rem 6rem 11rem 6rem',
         }}
       />
     ),

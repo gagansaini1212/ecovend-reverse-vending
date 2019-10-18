@@ -5,8 +5,7 @@ import theme from '../utils/theme';
 import ContactForm from './ContactForm';
 
 const Container = styled.section`
-  padding: 3rem 1.5rem 0rem 1.5rem;
-  background-color: #e1eff2;
+  padding: 3rem 1.5rem 3rem 1.5rem;
   font-family: ${theme.primaryFontFamily};
 
   @media only screen and (max-width: 768px) {
@@ -14,27 +13,18 @@ const Container = styled.section`
     margin-bottom: -2rem;
   }
 
-  .columns {
-    background-color: #ffffff;
-    margin-left: 0rem !important;
-    margin-right: 0rem !important;
-  }
-
-  .column {
-    margin-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
   .text {
     color: ${theme.secondaryColor};
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
   }
 
   .input {
     height: 2.5rem;
-    border-bottom: 1px solid ${theme.secondaryColor} !important;
+    border: 1px solid ${theme.secondaryColor} !important;
     background-color: #fff;
     border-color: #fff;
-    border-radius: none;
+    border-radius: 30px;
     box-shadow: none;
     ::placeholder {
       color: ${theme.secondaryColor};
@@ -44,6 +34,7 @@ const Container = styled.section`
 
   textarea {
     border: 1px solid ${theme.secondaryColor} !important;
+    border-radius: 30px;
     background-color: #fff;
     border-color: #fff;
     border-radius: none;
@@ -55,7 +46,6 @@ const Container = styled.section`
   }
 
   .button {
-    font-size: 1rem;
     font-weight: 400;
     background-color: ${theme.secondaryColor};
     transition: opacity 0.2s;
@@ -73,8 +63,14 @@ const Container = styled.section`
     }
   }
 
-  .is-7 {
-    align-self: center;
+  form,
+  .field {
+    width: 100%;
+  }
+
+  .icon {
+    margin-left: 0rem !important;
+    margin-right: 0.25rem !important;
   }
 `;
 
@@ -82,15 +78,28 @@ const Contact = () => (
   <Container id="contact" className="section">
     <div className="container">
       <div className="columns">
-        <div className="column has-text-centered is-7">
-          <h1 className="subtitle is-2 text">GET IN TOUCH</h1>
+        <div className="column">
+          <h1 className="subtitle is-3">Our Address</h1>
           <h4 className="subtitle is-6 text">
+            <span className="icon">
+              <i className="fas fa-map-marker-alt" />
+            </span>
             ECO House, Lea Road, Waltham Abbey, Hertfordshire, EN9 1AS
           </h4>
-          <h4 className="subtitle is-6 text">info@eco-vend.co.uk</h4>
-          <h4 className="subtitle is-6 text">08700 777 555</h4>
+          <h4 className="subtitle is-6 text">
+            <span className="icon">
+              <i className="fas fa-envelope" />
+            </span>
+            info@eco-vend.co.uk
+          </h4>
+          <h4 className="subtitle is-6 text">
+            <span className="icon">
+              <i className="fas fa-phone" />
+            </span>
+            08700 777 555
+          </h4>
         </div>
-        <div className="column">
+        <div className="column is-7">
           <div className="field is-horizontal">
             <div className="field-body">
               <ContactForm />
